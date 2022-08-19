@@ -130,6 +130,23 @@ async function fixPackageJson(sandbox: SandboxDetails) {
   return sandbox;
 }
 
+function getSandboxKind(sandbox: SandboxDetails) {
+  if (sandbox.packageJson.keywords.includes("example")) {
+    return "example";
+  }
+  if (sandbox.packageJson.keywords.includes("exercise")) {
+    return "exercise";
+  }
+  return null;
+}
+
+function getSandboxIcon(sandbox: "example" | "exercise") {
+  return {
+    exercise: "🏈",
+    example: "🔭",
+  }[sandbox];
+}
+
 Promise.all(sandboxes.map(getSandboxDetail))
   .then((sandboxes) => {
     const validSandboxes = sandboxes.filter(
@@ -143,9 +160,13 @@ Promise.all(sandboxes.map(getSandboxDetail))
     for (const [category, sandboxes] of Object.entries(byCategory)) {
       console.log(chalk.bold.underline(category));
       for (const sandbox of sandboxes) {
-        const isExercise = sandbox.packageJson.keywords.includes("exercise");
+        const sandboxKind = getSandboxKind(sandbox);
+        const icon = (sandboxKind ? getSandboxIcon(sandboxKind) : " ").padEnd(
+          3,
+          " "
+        );
         const fields = [
-          isExercise ? "⚽" : "  ",
+          icon,
           chalk.bold(sandbox.name).padEnd(70, " "),
           chalk.dim(sandbox.description || " ").padEnd(80, " "),
           getPackageVersion("react", sandbox),
