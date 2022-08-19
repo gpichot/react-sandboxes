@@ -1,0 +1,39 @@
+{
+  "name": "context-update-and-children-memoization",
+  "version": "1.0.0",
+  "description": "Context API: Context Update and Children update/Memoization",
+  "keywords": [
+    "sandbox",
+    "react",
+    "example",
+    "Context API"
+  ],
+  "main": "src/index.js",
+  "dependencies": {
+    "react": "18.0.0",
+    "react-dom": "18.0.0",
+    "react-scripts": "5.0.0"
+  },
+  "devDependencies": {
+    "@babel/runtime": "7.13.8",
+    "typescript": "4.1.3",
+    "@types/react": "18.0.17",
+    "@types/react-dom": "18.0.6"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "types:check": "tsc --noEmit --project tsconfig.json",
+    "lint": "eslint --fix",
+    "format": "prettier --write src"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
+
