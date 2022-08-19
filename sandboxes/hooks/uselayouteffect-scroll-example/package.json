@@ -1,0 +1,40 @@
+{
+  "name": "uselayouteffect-scroll-example",
+  "version": "1.0.0",
+  "description": "useLayoutEffect: scroll example",
+  "keywords": [
+    "sandbox",
+    "react",
+    "example",
+    "useLayoutEffect"
+  ],
+  "main": "src/index.js",
+  "dependencies": {
+    "@faker-js/faker": "6.2.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-scripts": "5.0.0"
+  },
+  "devDependencies": {
+    "@babel/runtime": "7.13.8",
+    "@types/react-dom": "18.0.6",
+    "typescript": "4.1.3",
+    "@types/react": "18.0.17"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "types:check": "tsc --noEmit --project tsconfig.json",
+    "lint": "eslint --fix",
+    "format": "prettier --write src"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
+

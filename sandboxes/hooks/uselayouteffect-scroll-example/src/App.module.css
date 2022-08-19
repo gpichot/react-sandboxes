@@ -1,0 +1,13 @@
+.container {
+  margin: auto;
+  height: 300px;
+  overflow-y: scroll;
+  width: 300px;
+  outline: 1px solid black;
+  padding: 30px 10px;
+}
+
+.separator {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
