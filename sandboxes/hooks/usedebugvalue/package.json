@@ -1,8 +1,12 @@
 {
   "name": "usedebugvalue",
   "version": "1.0.0",
-  "description": "Showcase useDebugValue hook",
-  "keywords": [],
+  "description": "useDebugValue: useCounter example",
+  "keywords": [
+    "sandbox",
+    "react",
+    "example"
+  ],
   "main": "src/index.js",
   "dependencies": {
     "react": "18.0.0",

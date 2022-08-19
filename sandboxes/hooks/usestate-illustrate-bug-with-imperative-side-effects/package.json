@@ -1,8 +1,14 @@
 {
   "name": "usestate-illustrate-bug-with-imperative-side-effects",
   "version": "1.0.0",
-  "description": "Illustrate bugs with imperative/side effects",
-  "keywords": [],
+  "description": "useState: illustrate pitfall with imperative programming",
+  "keywords": [
+    "sandbox",
+    "react",
+    "useState",
+    "example",
+    "common-pitfalls"
+  ],
   "main": "src/index.js",
   "dependencies": {
     "react": "18.0.0",
@@ -31,3 +37,4 @@
     "not op_mini all"
   ]
 }
+
