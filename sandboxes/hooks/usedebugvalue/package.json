@@ -27,15 +27,5 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ],
-  "peerDependenciesMeta": {
-    "eslint-plugin-flowtype@*": {
-      "@babel/plugin-transform-react-jsx": {
-        "optional": true
-      },
-      "@babel/plugin-syntax-flow": {
-        "optional": true
-      }
-    }
-  }
+  ]
 }
