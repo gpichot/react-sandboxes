@@ -11,7 +11,7 @@ export default function useRenderCounter() {
       style={{
         backgroundColor: "#ccc",
         padding: 4,
-        display: "inline-block"
+        display: "inline-block",
       }}
       ref={ref}
     />

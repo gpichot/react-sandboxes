@@ -9,6 +9,8 @@ const sandboxes = glob.sync("sandboxes/*/*/package.json");
 
 const Config = {
   CheckTypesCommand: "tsc --noEmit --project tsconfig.json",
+  LintCommand: "eslint --fix",
+  FormatCommand: "prettier --write src",
   Repository: "gpichot/react-sandboxes",
 };
 
@@ -98,6 +100,16 @@ async function fixPackageJson(sandbox: SandboxDetails) {
     modified = true;
   }
 
+  if (sandbox.packageJson.scripts["lint"] !== Config.LintCommand) {
+    sandbox.packageJson.scripts["lint"] = Config.LintCommand;
+    modified = true;
+  }
+
+  if (sandbox.packageJson.scripts["format"] !== Config.FormatCommand) {
+    sandbox.packageJson.scripts["format"] = Config.FormatCommand;
+    modified = true;
+  }
+
   if (!sandbox.packageJson.devDependencies["@types/react"]) {
     if (reactVersion) {
       const version = {
@@ -117,7 +129,6 @@ async function fixPackageJson(sandbox: SandboxDetails) {
   } catch (e) {
     if ((e as { code?: string }).code === "ENOENT") {
       fs.writeFile(readmeFilePath, createReadme(sandbox));
-      modified = true;
     }
   }
 

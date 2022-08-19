@@ -3,7 +3,7 @@ import useRenderCounter from "./useRenderCounter";
 
 export default function Box({
   children,
-  name
+  name,
 }: {
   children: React.ReactNode;
   name: string;
