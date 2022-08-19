@@ -84,7 +84,7 @@ function createReadme(sandbox: SandboxDetails) {
   const title = "Open in CodeSandbox";
   const urlBadge =
     'https://img.shields.io/badge/Open-in%20CodeSandbox-blue?style=for-the-badge&logo=codesandbox"';
-  const urlBox = `https://githubbox/com/${Config.Repository}/tree/main/sandboxes/${sandbox.category}/${sandbox.slug}`;
+  const urlBox = `https://githubbox.com/${Config.Repository}/tree/main/sandboxes/${sandbox.category}/${sandbox.slug}`;
 
   return `[![${title}](${urlBadge})](${urlBox})`;
 }
