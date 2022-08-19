@@ -190,4 +190,42 @@ Promise.all(sandboxes.map(getSandboxDetail))
       }
       console.log();
     }
+
+    return updateIndexReadme(byCategory);
   });
+
+async function updateIndexReadme(byCategory: {
+  [key: string]: SandboxDetails[];
+}) {
+  const readmeFilePath = path.resolve(__dirname, "..", "README.md");
+
+  const startText = "<!-- START_SANDBOXES -->";
+  const endText = "<!-- END_SANDBOXES -->";
+
+  const readme = await fs.readFile(readmeFilePath, "utf8");
+  const start = readme.indexOf(startText);
+  const end = readme.indexOf(endText);
+
+  const before = readme.substring(0, start);
+  const after = readme.substring(end + endText.length);
+
+  const lines = [];
+  for (const [category, sandboxes] of Object.entries(byCategory)) {
+    lines.push(`### ${category}\n`);
+    lines.push("|   | Description | Link |");
+    lines.push("|---|---|---|");
+    for (const sandbox of sandboxes) {
+      const sandboxKind = getSandboxKind(sandbox);
+      const icon = sandboxKind ? getSandboxIcon(sandboxKind) : " ";
+      const fields = [icon, sandbox.description, createReadme(sandbox)];
+
+      lines.push("| " + fields.join(" | ") + " |");
+    }
+    lines.push("");
+  }
+  const newContent = `${before}${startText}\n\n${lines.join(
+    "\n"
+  )}\n\n${endText}${after}`;
+
+  return fs.writeFile(readmeFilePath, newContent);
+}
