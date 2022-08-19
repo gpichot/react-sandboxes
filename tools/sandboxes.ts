@@ -147,7 +147,7 @@ Promise.all(sandboxes.map(getSandboxDetail))
         const fields = [
           isExercise ? "⚽" : "  ",
           chalk.bold(sandbox.name).padEnd(70, " "),
-          chalk.dim(sandbox.description).padEnd(80, " "),
+          chalk.dim(sandbox.description || " ").padEnd(80, " "),
           getPackageVersion("react", sandbox),
           getPackageVersion("react-dom", sandbox),
           ensureVersion(getPackageVersion("react-scripts", sandbox), "5.0.0"),
