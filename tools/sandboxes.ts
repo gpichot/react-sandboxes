@@ -29,6 +29,14 @@ function getPackageVersion<T extends { dependencies: PackageDependencies }>(
   return null;
 }
 
+function ensureVersion(currentVersion: string | null, expectedVersion: string) {
+  if (!currentVersion) return "-";
+  if (currentVersion !== expectedVersion) {
+    return chalk.red(currentVersion);
+  }
+  return chalk.green(currentVersion);
+}
+
 Promise.all(sandboxes.map(getSandboxDetail)).then((sandboxesDetails) => {
   const byCategory = groupBy(sandboxesDetails, (x) => x.category);
   for (const [category, sandboxes] of Object.entries(byCategory)) {
@@ -39,7 +47,7 @@ Promise.all(sandboxes.map(getSandboxDetail)).then((sandboxesDetails) => {
         chalk.dim(sandbox.description).padEnd(70, " "),
         getPackageVersion("react", sandbox),
         getPackageVersion("react-dom", sandbox),
-        getPackageVersion("react-scripts", sandbox),
+        ensureVersion(getPackageVersion("react-scripts", sandbox), "5.0.0"),
         getPackageVersion("typescript", sandbox),
       ];
       console.log(`  ${fields.join(" ")}`);

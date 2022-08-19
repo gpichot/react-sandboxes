@@ -7,6 +7,7 @@
     "packages/*"
   ],
   "scripts": {
+    "sandboxes:list": "ts-node tools/sandboxes.ts",
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",

@@ -16,6 +16,7 @@
     "typescript": "4.1.3"
   },
   "scripts": {
+    "types:check": "tsc --project tsconfig.json",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
@@ -26,6 +27,15 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "peerDependenciesMeta": {
+    "eslint-plugin-flowtype@*": {
+      "@babel/plugin-transform-react-jsx": {
+        "optional": true
+      },
+      "@babel/plugin-syntax-flow": {
+        "optional": true
+      }
+    }
+  }
 }
-
