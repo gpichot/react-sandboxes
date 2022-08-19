@@ -123,6 +123,19 @@ async function fixPackageJson(sandbox: SandboxDetails) {
     }
   }
 
+  if (!sandbox.packageJson.devDependencies["@types/react-dom"]) {
+    if (reactVersion) {
+      const version = {
+        17: "17.0.11",
+        18: "18.0.6",
+      }[reactVersion.major];
+      if (version) {
+        sandbox.packageJson.devDependencies["@types/react-dom"] = version;
+        modified = true;
+      }
+    }
+  }
+
   const readmeFilePath = `sandboxes/${sandbox.category}/${sandbox.slug}/README.md`;
   try {
     await fs.stat(readmeFilePath);

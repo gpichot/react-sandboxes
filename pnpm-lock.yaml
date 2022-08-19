@@ -254,6 +254,25 @@ importers:
       '@types/react-dom': 17.0.14
       typescript: 4.1.3
 
+  sandboxes/performance/dont-create-component-from-within-a-component:
+    specifiers:
+      '@babel/runtime': 7.13.8
+      '@types/react': 18.0.17
+      '@types/react-dom': 18.0.6
+      react: 18.0.0
+      react-dom: 18.0.0
+      react-scripts: 5.0.0
+      typescript: 4.1.3
+    dependencies:
+      react: 18.0.0
+      react-dom: 18.0.0_react@18.0.0
+      react-scripts: 5.0.0_umx2tf5eocknbjfrv5nc3gvzey
+    devDependencies:
+      '@babel/runtime': 7.13.8
+      '@types/react': 18.0.17
+      '@types/react-dom': 18.0.6
+      typescript: 4.1.3
+
 packages:
 
   /@ampproject/remapping/2.2.0:
