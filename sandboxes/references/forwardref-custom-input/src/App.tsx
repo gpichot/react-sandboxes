@@ -9,6 +9,8 @@ const CustomInput = React.forwardRef<HTMLInputElement, CustomInputProps>(
   }
 );
 
+CustomInput.displayName = "CustomInput";
+
 export default function App() {
   const inputRef = React.useRef<HTMLInputElement>(null);
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
