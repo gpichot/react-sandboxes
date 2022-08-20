@@ -33,5 +33,11 @@ Repository used to store all sandboxes that I used during workshops.
 | 🔭 | pitfall: Creating a component from a component | [![Open in CodeSandbox](https://img.shields.io/badge/Open-in%20CodeSandbox-blue?style=for-the-badge&logo=codesandbox")](https://githubbox.com/gpichot/react-sandboxes/tree/main/sandboxes/performance/dont-create-component-from-within-a-component) |
 | 🔭 | React.memo: memoizing a component | [![Open in CodeSandbox](https://img.shields.io/badge/Open-in%20CodeSandbox-blue?style=for-the-badge&logo=codesandbox")](https://githubbox.com/gpichot/react-sandboxes/tree/main/sandboxes/performance/reactmemo) |
 
+### references
+
+|   | Description | Link |
+|---|---|---|
+| 🔭 | forwardRef: custom input | [![Open in CodeSandbox](https://img.shields.io/badge/Open-in%20CodeSandbox-blue?style=for-the-badge&logo=codesandbox")](https://githubbox.com/gpichot/react-sandboxes/tree/main/sandboxes/references/forwardref-custom-input) |
+
 
 <!-- END_SANDBOXES -->
