@@ -10,6 +10,7 @@ Repository used to store all sandboxes that I used during workshops.
 
 |   | Description | Link |
 |---|---|---|
+| 🔭 | Create context: theme context with setters | [![Open in CodeSandbox](https://img.shields.io/badge/Open-in%20CodeSandbox-blue?style=for-the-badge&logo=codesandbox")](https://githubbox.com/gpichot/react-sandboxes/tree/main/sandboxes/context-api/createcontext-theme-use-case-with-setters) |
 | 🏈 | Showcase creating a Custom Provider and Hook for Context | [![Open in CodeSandbox](https://img.shields.io/badge/Open-in%20CodeSandbox-blue?style=for-the-badge&logo=codesandbox")](https://githubbox.com/gpichot/react-sandboxes/tree/main/sandboxes/context-api/createcontext-theme-use-case) |
 
 ### hooks
