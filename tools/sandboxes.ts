@@ -110,6 +110,11 @@ async function fixPackageJson(sandbox: SandboxDetails) {
     modified = true;
   }
 
+  if (sandbox.packageJson.devDependencies["typescript"] !== "^4.7.4") {
+    sandbox.packageJson.devDependencies["typescript"] = "^4.7.4";
+    modified = true;
+  }
+
   if (!sandbox.packageJson.devDependencies["@types/react"]) {
     if (reactVersion) {
       const version = {
