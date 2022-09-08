@@ -26,13 +26,14 @@ Repository used to store all sandboxes that I used during workshops.
 | 🔭 | useRef: select textarea content on mount | [![Open in CodeSandbox](https://img.shields.io/badge/Open-in%20CodeSandbox-blue?style=for-the-badge&logo=codesandbox")](https://githubbox.com/gpichot/react-sandboxes/tree/main/sandboxes/hooks/useref-select-focus-textarea-content) |
 | 🔭 | useState: illustrate pitfall with imperative programming | [![Open in CodeSandbox](https://img.shields.io/badge/Open-in%20CodeSandbox-blue?style=for-the-badge&logo=codesandbox")](https://githubbox.com/gpichot/react-sandboxes/tree/main/sandboxes/hooks/usestate-illustrate-bug-with-imperative-side-effects) |
 
-### performance
+### optimization
 
 |   | Description | Link |
 |---|---|---|
-| 🔭 | Context API: Context Update and Children update/Memoization | [![Open in CodeSandbox](https://img.shields.io/badge/Open-in%20CodeSandbox-blue?style=for-the-badge&logo=codesandbox")](https://githubbox.com/gpichot/react-sandboxes/tree/main/sandboxes/performance/context-update-and-children-memoization) |
-| 🔭 | pitfall: Creating a component from a component | [![Open in CodeSandbox](https://img.shields.io/badge/Open-in%20CodeSandbox-blue?style=for-the-badge&logo=codesandbox")](https://githubbox.com/gpichot/react-sandboxes/tree/main/sandboxes/performance/dont-create-component-from-within-a-component) |
-| 🔭 | React.memo: memoizing a component | [![Open in CodeSandbox](https://img.shields.io/badge/Open-in%20CodeSandbox-blue?style=for-the-badge&logo=codesandbox")](https://githubbox.com/gpichot/react-sandboxes/tree/main/sandboxes/performance/reactmemo) |
+| 🔭 | Context API: Context Update and Children update/Memoization | [![Open in CodeSandbox](https://img.shields.io/badge/Open-in%20CodeSandbox-blue?style=for-the-badge&logo=codesandbox")](https://githubbox.com/gpichot/react-sandboxes/tree/main/sandboxes/optimization/context-update-and-children-memoization) |
+| 🔭 | pitfall: Creating a component from a component | [![Open in CodeSandbox](https://img.shields.io/badge/Open-in%20CodeSandbox-blue?style=for-the-badge&logo=codesandbox")](https://githubbox.com/gpichot/react-sandboxes/tree/main/sandboxes/optimization/dont-create-component-from-within-a-component) |
+| 🔭 | React.memo: memoizing a component | [![Open in CodeSandbox](https://img.shields.io/badge/Open-in%20CodeSandbox-blue?style=for-the-badge&logo=codesandbox")](https://githubbox.com/gpichot/react-sandboxes/tree/main/sandboxes/optimization/reactmemo) |
+|   | Separate context state and setters | [![Open in CodeSandbox](https://img.shields.io/badge/Open-in%20CodeSandbox-blue?style=for-the-badge&logo=codesandbox")](https://githubbox.com/gpichot/react-sandboxes/tree/main/sandboxes/optimization/separate-context-state-and-setter) |
 
 ### react
 

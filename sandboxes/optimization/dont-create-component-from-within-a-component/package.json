@@ -7,7 +7,7 @@
     "react",
     "example",
     "common-pitfalls",
-    "performance"
+    "optimization"
   ],
   "main": "src/index.js",
   "dependencies": {
