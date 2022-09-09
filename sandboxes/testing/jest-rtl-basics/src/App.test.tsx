@@ -19,6 +19,9 @@ describe("App", () => {
     const user = userEvent.setup();
 
     render(<App />);
+
+    // screen.logTestingPlaygroundURL();
+
     await user.click(screen.getByText("Increment"));
 
     expect(screen.getByLabelText("Count")).toHaveTextContent("1");
