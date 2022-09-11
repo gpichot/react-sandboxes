@@ -1,34 +1,25 @@
 {
-  "name": "jest-rtl-basics",
+  "name": "portals-event-bubbling",
   "version": "1.0.0",
-  "description": "React Testing Library & Jest: testing a component",
+  "description": "Show event bubbling through portals",
   "keywords": [
     "sandbox",
-    "testing",
     "react",
-    "jest",
     "example",
-    "react-testing-library"
+    "portals"
   ],
   "main": "src/index.js",
   "dependencies": {
+    "@types/react-dom": "17.0.14",
     "react": "18.0.0",
     "react-dom": "18.0.0",
-    "@testing-library/jest-dom": "5.16.4",
-    "@testing-library/react": "13.0.0",
-    "@testing-library/user-event": "14.0.4",
     "react-scripts": "5.0.0"
   },
   "devDependencies": {
     "@babel/runtime": "7.13.8",
-    "@testing-library/jest-dom": "5.16.4",
-    "@testing-library/react": "13.0.0",
-    "@testing-library/user-event": "14.0.4",
-    "@types/jest": "^28.1.7",
+    "typescript": "^4.7.4",
     "@types/react": "18.0.17",
-    "@types/react-dom": "18.0.6",
-    "@types/testing-library__jest-dom": "^5.14.5",
-    "typescript": "^4.7.4"
+    "@types/react-dom": "18.0.6"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -46,3 +37,4 @@
     "not op_mini all"
   ]
 }
+

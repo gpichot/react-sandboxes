@@ -33,7 +33,13 @@ Repository used to store all sandboxes that I used during workshops.
 | 🔭 | Context API: Context Update and Children update/Memoization | [![Open in CodeSandbox](https://img.shields.io/badge/Open-in%20CodeSandbox-blue?style=for-the-badge&logo=codesandbox")](https://githubbox.com/gpichot/react-sandboxes/tree/main/sandboxes/optimization/context-update-and-children-memoization) |
 | 🔭 | pitfall: Creating a component from a component | [![Open in CodeSandbox](https://img.shields.io/badge/Open-in%20CodeSandbox-blue?style=for-the-badge&logo=codesandbox")](https://githubbox.com/gpichot/react-sandboxes/tree/main/sandboxes/optimization/dont-create-component-from-within-a-component) |
 | 🔭 | React.memo: memoizing a component | [![Open in CodeSandbox](https://img.shields.io/badge/Open-in%20CodeSandbox-blue?style=for-the-badge&logo=codesandbox")](https://githubbox.com/gpichot/react-sandboxes/tree/main/sandboxes/optimization/reactmemo) |
-|   | Separate context state and setters | [![Open in CodeSandbox](https://img.shields.io/badge/Open-in%20CodeSandbox-blue?style=for-the-badge&logo=codesandbox")](https://githubbox.com/gpichot/react-sandboxes/tree/main/sandboxes/optimization/separate-context-state-and-setter) |
+| 🔭 | Separate context state and setters | [![Open in CodeSandbox](https://img.shields.io/badge/Open-in%20CodeSandbox-blue?style=for-the-badge&logo=codesandbox")](https://githubbox.com/gpichot/react-sandboxes/tree/main/sandboxes/optimization/separate-context-state-and-setter) |
+
+### portals
+
+|   | Description | Link |
+|---|---|---|
+| 🔭 | Show event bubbling through portals | [![Open in CodeSandbox](https://img.shields.io/badge/Open-in%20CodeSandbox-blue?style=for-the-badge&logo=codesandbox")](https://githubbox.com/gpichot/react-sandboxes/tree/main/sandboxes/portals/event-bubbling) |
 
 ### react
 
@@ -51,7 +57,7 @@ Repository used to store all sandboxes that I used during workshops.
 
 |   | Description | Link |
 |---|---|---|
-|   | React Testing Library & Jest: testing a component | [![Open in CodeSandbox](https://img.shields.io/badge/Open-in%20CodeSandbox-blue?style=for-the-badge&logo=codesandbox")](https://githubbox.com/gpichot/react-sandboxes/tree/main/sandboxes/testing/jest-rtl-basics) |
+| 🔭 | React Testing Library & Jest: testing a component | [![Open in CodeSandbox](https://img.shields.io/badge/Open-in%20CodeSandbox-blue?style=for-the-badge&logo=codesandbox")](https://githubbox.com/gpichot/react-sandboxes/tree/main/sandboxes/testing/jest-rtl-basics) |
 | 🔭 | React Testing Library: testing a hook | [![Open in CodeSandbox](https://img.shields.io/badge/Open-in%20CodeSandbox-blue?style=for-the-badge&logo=codesandbox")](https://githubbox.com/gpichot/react-sandboxes/tree/main/sandboxes/testing/testing-react-hook) |
 
 
