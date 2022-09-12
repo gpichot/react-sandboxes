@@ -1,6 +1,7 @@
 import React from "react";
 
 import { useForm } from "react-hook-form";
+import { DevTool } from "@hookform/devtools";
 
 type UserFormDetails = {
   firstName: string;
@@ -11,6 +12,7 @@ export default function App() {
   const {
     register,
     handleSubmit,
+    control,
     formState: { errors },
   } = useForm<UserFormDetails>();
 
@@ -39,6 +41,7 @@ export default function App() {
       {errors.age && <p>{errors.age.type}</p>}
       <br />
       <input type="submit" />
+      <DevTool control={control} />
     </form>
   );
 }
