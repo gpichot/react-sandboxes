@@ -21,6 +21,7 @@ function SlowSibling() {
   React.useEffect(() => sleep(1000));
   return null;
 }
+
 function MessageList({ messages }: { messages: string[] }) {
   const ref = React.useRef<HTMLDivElement>(null);
   React.useEffect(() => {
@@ -31,10 +32,10 @@ function MessageList({ messages }: { messages: string[] }) {
   return (
     <div ref={ref} className={styles.container}>
       {messages.map((x) => (
-        <>
-          <Message key={x} message={x} />
+        <React.Fragment key={x}>
+          <Message message={x} />
           <hr key={`${x}-separator`} />
-        </>
+        </React.Fragment>
       ))}
     </div>
   );
@@ -59,9 +60,8 @@ export default function App() {
   return (
     <>
       <button onClick={addMessage}>Add message</button>
-      <MessageList messages={messages} />
-
       <SlowSibling />
+      <MessageList messages={messages} />
     </>
   );
 }

@@ -25,6 +25,7 @@ Repository used to store all sandboxes that I used during workshops.
 
 |   | Description | Link |
 |---|---|---|
+| 🔭 | Hooks: flow | [![Open in CodeSandbox](https://img.shields.io/badge/Open-in%20CodeSandbox-blue?style=for-the-badge&logo=codesandbox")](https://githubbox.com/gpichot/react-sandboxes/tree/main/sandboxes/hooks/hooks-flow) |
 | 🔭 | useDebugValue: useCounter example | [![Open in CodeSandbox](https://img.shields.io/badge/Open-in%20CodeSandbox-blue?style=for-the-badge&logo=codesandbox")](https://githubbox.com/gpichot/react-sandboxes/tree/main/sandboxes/hooks/usedebugvalue) |
 | 🔭 | useImperativeHandle: inversion of control with input focus | [![Open in CodeSandbox](https://img.shields.io/badge/Open-in%20CodeSandbox-blue?style=for-the-badge&logo=codesandbox")](https://githubbox.com/gpichot/react-sandboxes/tree/main/sandboxes/hooks/useimperativehandle-inversion-of-control-with-input-focus) |
 | 🔭 | useLayoutEffect: Counter Example | [![Open in CodeSandbox](https://img.shields.io/badge/Open-in%20CodeSandbox-blue?style=for-the-badge&logo=codesandbox")](https://githubbox.com/gpichot/react-sandboxes/tree/main/sandboxes/hooks/uselayouteffect-counter-example) |

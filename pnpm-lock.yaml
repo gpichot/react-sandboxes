@@ -219,6 +219,25 @@ importers:
       '@types/react': 18.0.17
       typescript: 4.7.4
 
+  sandboxes/hooks/hooks-flow:
+    specifiers:
+      '@babel/runtime': 7.13.8
+      '@types/react': 18.0.17
+      '@types/react-dom': 17.0.14
+      react: 18.0.0
+      react-dom: 18.0.0
+      react-scripts: 5.0.0
+      typescript: ^4.7.4
+    dependencies:
+      react: 18.0.0
+      react-dom: 18.0.0_react@18.0.0
+      react-scripts: 5.0.0_boeld4aqqqvxudiccouiaergta
+    devDependencies:
+      '@babel/runtime': 7.13.8
+      '@types/react': 18.0.17
+      '@types/react-dom': 17.0.14
+      typescript: 4.7.4
+
   sandboxes/hooks/usedebugvalue:
     specifiers:
       '@babel/runtime': 7.13.8
@@ -262,14 +281,14 @@ importers:
       '@babel/runtime': 7.13.8
       '@types/react': 18.0.17
       '@types/react-dom': 18.0.6
-      react: 18.0.0
-      react-dom: 18.0.0
+      react: ^17.0.0
+      react-dom: ^17.0.0
       react-scripts: 5.0.0
       typescript: ^4.7.4
     dependencies:
-      react: 18.0.0
-      react-dom: 18.0.0_react@18.0.0
-      react-scripts: 5.0.0_boeld4aqqqvxudiccouiaergta
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+      react-scripts: 5.0.0_s7dhm7uhgnhsqh75wuilf3r4wi
     devDependencies:
       '@babel/runtime': 7.13.8
       '@types/react': 18.0.17
@@ -282,15 +301,15 @@ importers:
       '@faker-js/faker': 6.2.0
       '@types/react': 18.0.17
       '@types/react-dom': 18.0.6
-      react: 18.2.0
-      react-dom: 18.2.0
+      react: ^17.0.0
+      react-dom: ^17.0.0
       react-scripts: 5.0.0
       typescript: ^4.7.4
     dependencies:
       '@faker-js/faker': 6.2.0
-      react: 18.2.0
-      react-dom: 18.2.0_react@18.2.0
-      react-scripts: 5.0.0_qtbnez4q7bzoc4eqybg3efzzxe
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+      react-scripts: 5.0.0_s7dhm7uhgnhsqh75wuilf3r4wi
     devDependencies:
       '@babel/runtime': 7.13.8
       '@types/react': 18.0.17
@@ -9500,16 +9519,6 @@ packages:
       scheduler: 0.21.0
     dev: false
 
-  /react-dom/18.2.0_react@18.2.0:
-    resolution: {integrity: sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==}
-    peerDependencies:
-      react: ^18.2.0
-    dependencies:
-      loose-envify: 1.4.0
-      react: 18.2.0
-      scheduler: 0.23.0
-    dev: false
-
   /react-error-boundary/3.1.4_react@18.0.0:
     resolution: {integrity: sha512-uM9uPzZJTF6wRQORmSrvOIgt4lJ9MC1sNgEOj2XGsDTRE4kmpWxg7ENK9EWNKJRMAOY9z0MuF4yIfl6gp4sotA==}
     engines: {node: '>=10', npm: '>=6'}
@@ -9645,7 +9654,7 @@ packages:
       - webpack-plugin-serve
     dev: false
 
-  /react-scripts/5.0.0_qtbnez4q7bzoc4eqybg3efzzxe:
+  /react-scripts/5.0.0_s7dhm7uhgnhsqh75wuilf3r4wi:
     resolution: {integrity: sha512-3i0L2CyIlROz7mxETEdfif6Sfhh9Lfpzi10CtcGs1emDQStmZfWjJbAIMtRD0opVUjQuFWqHZyRZ9PPzKCFxWg==}
     engines: {node: '>=14.0.0'}
     hasBin: true
@@ -9688,7 +9697,7 @@ packages:
       postcss-normalize: 10.0.1_bujjonwylnebbx3cl7qckr3eti
       postcss-preset-env: 7.7.2_postcss@8.4.14
       prompts: 2.4.2
-      react: 18.2.0
+      react: 17.0.2
       react-app-polyfill: 3.0.0
       react-dev-utils: 12.0.1_bc3cndyb4zfm7v6hebu43p6ee4
       react-refresh: 0.11.0
@@ -9772,13 +9781,6 @@ packages:
 
   /react/18.0.0:
     resolution: {integrity: sha512-x+VL6wbT4JRVPm7EGxXhZ8w8LTROaxPXOqhlGyVSrv0sB1jkyFGgXxJ8LVoPRLvPR6/CIZGFmfzqUa2NYeMr2A==}
-    engines: {node: '>=0.10.0'}
-    dependencies:
-      loose-envify: 1.4.0
-    dev: false
-
-  /react/18.2.0:
-    resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
     engines: {node: '>=0.10.0'}
     dependencies:
       loose-envify: 1.4.0
@@ -10080,12 +10082,6 @@ packages:
 
   /scheduler/0.21.0:
     resolution: {integrity: sha512-1r87x5fz9MXqswA2ERLo0EbOAU74DpIUO090gIasYTqlVoJeMcl+Z1Rg7WHz+qtPujhS/hGIt9kxZOYBV3faRQ==}
-    dependencies:
-      loose-envify: 1.4.0
-    dev: false
-
-  /scheduler/0.23.0:
-    resolution: {integrity: sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==}
     dependencies:
       loose-envify: 1.4.0
     dev: false
