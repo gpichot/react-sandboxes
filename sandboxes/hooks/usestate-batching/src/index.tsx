@@ -1,5 +1,5 @@
 import React from "react";
-import * as ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 
 /**
  *
@@ -38,4 +38,6 @@ function LogEvents() {
 
 const rootElement = document.getElementById("root") as HTMLElement;
 
-ReactDOM.render(<App />, rootElement);
+const root = createRoot(rootElement);
+
+root.render(<App />);
