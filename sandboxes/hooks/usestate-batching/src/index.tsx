@@ -10,18 +10,28 @@ function App() {
   const [count, setCount] = React.useState(0);
   const [flag, setFlag] = React.useState(false);
 
-  function handleClick() {
+  const handleClick = () => {
     console.log("=== click ===");
-    setTimeout(() => setCount((c) => c + 1), 1000);
+    setTimeout(() => {
+      console.log("=== timeout ===");
+      setCount((c) => c + 1);
+    }, 0);
     setCount((c) => c + 1); // Does not re-render yet
     setFlag((f) => !f); // Does not re-render yet
     setCount((c) => c + 1);
     // React will only re-render once at the end (that's batching!)
-  }
+  };
+
+  const handleMouseUp = () => {
+    console.log("=== mouseup ===");
+    setCount((c) => c + 1);
+  };
 
   return (
     <div>
-      <button onClick={handleClick}>Next</button>
+      <button onClick={handleClick} onMouseUp={handleMouseUp}>
+        Next
+      </button>
       <h1 style={{ color: flag ? "blue" : "black" }}>{count}</h1>
       <LogEvents />
     </div>
