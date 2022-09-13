@@ -32,6 +32,7 @@ Repository used to store all sandboxes that I used during workshops.
 | 🔭 | useReducer example: Increment/Decrement | [![Open in CodeSandbox](https://img.shields.io/badge/Open-in%20CodeSandbox-blue?style=for-the-badge&logo=codesandbox")](https://githubbox.com/gpichot/react-sandboxes/tree/main/sandboxes/hooks/usereducer) |
 | 🔭 | useRef: long-live objects example | [![Open in CodeSandbox](https://img.shields.io/badge/Open-in%20CodeSandbox-blue?style=for-the-badge&logo=codesandbox")](https://githubbox.com/gpichot/react-sandboxes/tree/main/sandboxes/hooks/useref-long-lived-objects) |
 | 🔭 | useRef: select textarea content on mount | [![Open in CodeSandbox](https://img.shields.io/badge/Open-in%20CodeSandbox-blue?style=for-the-badge&logo=codesandbox")](https://githubbox.com/gpichot/react-sandboxes/tree/main/sandboxes/hooks/useref-select-focus-textarea-content) |
+| 🔭 | useState: Example | [![Open in CodeSandbox](https://img.shields.io/badge/Open-in%20CodeSandbox-blue?style=for-the-badge&logo=codesandbox")](https://githubbox.com/gpichot/react-sandboxes/tree/main/sandboxes/hooks/usestate-example) |
 | 🔭 | useState: illustrate pitfall with imperative programming | [![Open in CodeSandbox](https://img.shields.io/badge/Open-in%20CodeSandbox-blue?style=for-the-badge&logo=codesandbox")](https://githubbox.com/gpichot/react-sandboxes/tree/main/sandboxes/hooks/usestate-illustrate-bug-with-imperative-side-effects) |
 
 ### optimization
