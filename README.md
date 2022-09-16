@@ -60,6 +60,7 @@ Repository used to store all sandboxes that I used during workshops.
 
 |   | Description | Link |
 |---|---|---|
+| 🔭 | React Query Basics | [![Open in CodeSandbox](https://img.shields.io/badge/Open-in%20CodeSandbox-blue?style=for-the-badge&logo=codesandbox")](https://githubbox.com/gpichot/react-sandboxes/tree/main/sandboxes/react-query/basics) |
 | 🏈 | Exercise: useQuery with nftlist (Solution) | [![Open in CodeSandbox](https://img.shields.io/badge/Open-in%20CodeSandbox-blue?style=for-the-badge&logo=codesandbox")](https://githubbox.com/gpichot/react-sandboxes/tree/main/sandboxes/react-query/usequery-nftlist-solution) |
 | 🏈 | Exercise: useQuery with nftlist | [![Open in CodeSandbox](https://img.shields.io/badge/Open-in%20CodeSandbox-blue?style=for-the-badge&logo=codesandbox")](https://githubbox.com/gpichot/react-sandboxes/tree/main/sandboxes/react-query/usequery-nftlist) |
 
