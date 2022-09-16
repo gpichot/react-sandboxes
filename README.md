@@ -41,7 +41,7 @@ Repository used to store all sandboxes that I used during workshops.
 
 |   | Description | Link |
 |---|---|---|
-| 🏈 | Exercise (solution): code splitting Company Map | [![Open in CodeSandbox](https://img.shields.io/badge/Open-in%20CodeSandbox-blue?style=for-the-badge&logo=codesandbox")](https://githubbox.com/gpichot/react-sandboxes/tree/main/sandboxes/optimization/code-splitting-exercise-company-map-solution) |
+| 🏈 | Exercise: code splitting Company Map (Solution) | [![Open in CodeSandbox](https://img.shields.io/badge/Open-in%20CodeSandbox-blue?style=for-the-badge&logo=codesandbox")](https://githubbox.com/gpichot/react-sandboxes/tree/main/sandboxes/optimization/code-splitting-exercise-company-map-solution) |
 | 🏈 | Exercise: code splitting Company Map | [![Open in CodeSandbox](https://img.shields.io/badge/Open-in%20CodeSandbox-blue?style=for-the-badge&logo=codesandbox")](https://githubbox.com/gpichot/react-sandboxes/tree/main/sandboxes/optimization/code-splitting-exercise-company-map) |
 | 🔭 | Context API: Context Update and Children update/Memoization | [![Open in CodeSandbox](https://img.shields.io/badge/Open-in%20CodeSandbox-blue?style=for-the-badge&logo=codesandbox")](https://githubbox.com/gpichot/react-sandboxes/tree/main/sandboxes/optimization/context-update-and-children-memoization) |
 | 🔭 | pitfall: Creating a component from a component | [![Open in CodeSandbox](https://img.shields.io/badge/Open-in%20CodeSandbox-blue?style=for-the-badge&logo=codesandbox")](https://githubbox.com/gpichot/react-sandboxes/tree/main/sandboxes/optimization/dont-create-component-from-within-a-component) |
@@ -60,6 +60,7 @@ Repository used to store all sandboxes that I used during workshops.
 
 |   | Description | Link |
 |---|---|---|
+| 🏈 | Exercise: useQuery with nftlist (Solution) | [![Open in CodeSandbox](https://img.shields.io/badge/Open-in%20CodeSandbox-blue?style=for-the-badge&logo=codesandbox")](https://githubbox.com/gpichot/react-sandboxes/tree/main/sandboxes/react-query/usequery-nftlist-solution) |
 | 🏈 | Exercise: useQuery with nftlist | [![Open in CodeSandbox](https://img.shields.io/badge/Open-in%20CodeSandbox-blue?style=for-the-badge&logo=codesandbox")](https://githubbox.com/gpichot/react-sandboxes/tree/main/sandboxes/react-query/usequery-nftlist) |
 
 ### react-router
