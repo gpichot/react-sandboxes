@@ -56,6 +56,12 @@ Repository used to store all sandboxes that I used during workshops.
 | 🔭 | Show event bubbling through portals | [![Open in CodeSandbox](https://img.shields.io/badge/Open-in%20CodeSandbox-blue?style=for-the-badge&logo=codesandbox")](https://githubbox.com/gpichot/react-sandboxes/tree/main/sandboxes/portals/event-bubbling) |
 | 🔭 | Simple example of using portals | [![Open in CodeSandbox](https://img.shields.io/badge/Open-in%20CodeSandbox-blue?style=for-the-badge&logo=codesandbox")](https://githubbox.com/gpichot/react-sandboxes/tree/main/sandboxes/portals/usage) |
 
+### react-router
+
+|   | Description | Link |
+|---|---|---|
+| 🏈 | Exercise: Lazy Loading and Suspense with React Router | [![Open in CodeSandbox](https://img.shields.io/badge/Open-in%20CodeSandbox-blue?style=for-the-badge&logo=codesandbox")](https://githubbox.com/gpichot/react-sandboxes/tree/main/sandboxes/react-router/exercise-lazy-loading-and-suspense) |
+
 ### react
 
 |   | Description | Link |
