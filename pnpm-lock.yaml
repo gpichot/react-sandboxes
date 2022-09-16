@@ -457,6 +457,33 @@ importers:
       '@babel/runtime': 7.13.8
       typescript: 4.7.4
 
+  sandboxes/optimization/code-splitting-exercise-company-map-solution:
+    specifiers:
+      '@babel/runtime': 7.13.8
+      '@types/leaflet': 1.8.0
+      '@types/react': 18.0.17
+      '@types/react-dom': 18.0.6
+      '@types/react-leaflet': 2.8.2
+      leaflet: 1.7.1
+      react: 18.0.0
+      react-dom: 18.0.0
+      react-leaflet: 4.0.0-beta.0
+      react-scripts: 5.0.0
+      typescript: ^4.7.4
+    dependencies:
+      '@types/leaflet': 1.8.0
+      '@types/react': 18.0.17
+      '@types/react-dom': 18.0.6
+      '@types/react-leaflet': 2.8.2
+      leaflet: 1.7.1
+      react: 18.0.0
+      react-dom: 18.0.0_react@18.0.0
+      react-leaflet: 4.0.0-beta.0_zfrmavi3rjvmvyxfay7xbwyy6m
+      react-scripts: 5.0.0_boeld4aqqqvxudiccouiaergta
+    devDependencies:
+      '@babel/runtime': 7.13.8
+      typescript: 4.7.4
+
   sandboxes/optimization/context-update-and-children-memoization:
     specifiers:
       '@babel/runtime': 7.13.8
