@@ -62,6 +62,12 @@ Repository used to store all sandboxes that I used during workshops.
 |---|---|---|
 | 🏈 | Showcase all React JSX basics | [![Open in CodeSandbox](https://img.shields.io/badge/Open-in%20CodeSandbox-blue?style=for-the-badge&logo=codesandbox")](https://githubbox.com/gpichot/react-sandboxes/tree/main/sandboxes/react/basics) |
 
+### reconciliation
+
+|   | Description | Link |
+|---|---|---|
+| 🔭 | Children & reconciliation | [![Open in CodeSandbox](https://img.shields.io/badge/Open-in%20CodeSandbox-blue?style=for-the-badge&logo=codesandbox")](https://githubbox.com/gpichot/react-sandboxes/tree/main/sandboxes/reconciliation/children-reconciliation) |
+
 ### references
 
 |   | Description | Link |
