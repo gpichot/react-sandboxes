@@ -1,0 +1,45 @@
+{
+  "name": "exercise-company-detail-page",
+  "version": "1.0.0",
+  "description": "Exercise: code splitting Company Map",
+  "keywords": [
+    "sandbox",
+    "react",
+    "exercise",
+    "code splitting"
+  ],
+  "main": "src/index.js",
+  "dependencies": {
+    "@types/leaflet": "1.8.0",
+    "@types/react": "18.0.17",
+    "@types/react-dom": "18.0.6",
+    "@types/react-leaflet": "2.8.2",
+    "leaflet": "1.7.1",
+    "react": "18.0.0",
+    "react-dom": "18.0.0",
+    "react-leaflet": "4.0.0-beta.0",
+    "react-scripts": "5.0.0"
+  },
+  "devDependencies": {
+    "@types/leaflet": "1.8.0",
+    "@babel/runtime": "7.13.8",
+    "typescript": "^4.7.4",
+    "@types/react": "18.0.17",
+    "@types/react-dom": "18.0.6"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "types:check": "tsc --noEmit --project tsconfig.json",
+    "lint": "eslint --fix",
+    "format": "prettier --write src"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
