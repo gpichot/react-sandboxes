@@ -6,7 +6,8 @@
     "sandbox",
     "react",
     "useState",
-    "example"
+    "example",
+    "hooks"
   ],
   "main": "src/index.js",
   "dependencies": {
@@ -36,4 +37,3 @@
     "not op_mini all"
   ]
 }
-

@@ -6,7 +6,8 @@
     "sandbox",
     "react",
     "example",
-    "useLayoutEffect"
+    "useLayoutEffect",
+    "hooks"
   ],
   "main": "src/index.js",
   "dependencies": {

@@ -6,7 +6,8 @@
     "sandbox",
     "react",
     "example",
-    "Context API"
+    "Context API",
+    "optimization"
   ],
   "main": "src/index.js",
   "dependencies": {

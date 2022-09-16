@@ -6,7 +6,8 @@
     "sandbox",
     "react",
     "exercise",
-    "code splitting"
+    "code splitting",
+    "optimization"
   ],
   "main": "src/index.js",
   "dependencies": {

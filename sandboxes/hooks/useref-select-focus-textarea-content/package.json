@@ -5,7 +5,8 @@
   "keywords": [
     "sandbox",
     "react",
-    "example"
+    "example",
+    "hooks"
   ],
   "main": "src/index.js",
   "dependencies": {

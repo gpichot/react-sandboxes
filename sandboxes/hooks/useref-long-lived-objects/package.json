@@ -6,7 +6,8 @@
     "react",
     "hooks",
     "example",
-    "useRef"
+    "useRef",
+    "sandbox"
   ],
   "main": "src/index.js",
   "dependencies": {

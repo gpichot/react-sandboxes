@@ -6,7 +6,8 @@
     "sandbox",
     "react",
     "useState",
-    "example"
+    "example",
+    "hooks"
   ],
   "main": "src/index.js",
   "dependencies": {

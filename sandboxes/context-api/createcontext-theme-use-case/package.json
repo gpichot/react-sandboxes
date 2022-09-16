@@ -5,7 +5,8 @@
   "keywords": [
     "sandbox",
     "react",
-    "exercise"
+    "exercise",
+    "context-api"
   ],
   "main": "src/index.js",
   "dependencies": {

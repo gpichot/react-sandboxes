@@ -6,7 +6,8 @@
     "sandbox",
     "react",
     "React.memo",
-    "example"
+    "example",
+    "optimization"
   ],
   "main": "src/index.js",
   "dependencies": {

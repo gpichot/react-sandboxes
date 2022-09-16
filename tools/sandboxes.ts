@@ -35,6 +35,7 @@ async function getSandboxDetail(sandboxPackageJsonFilePath: string) {
     const [_, category, slug] = sandboxPackageJsonFilePath.split("/");
     const { name, description } = packageJson as {
       name: string;
+      keywords: string[];
       description: string;
       dependencies: PackageDependencies;
       scripts: PackageScripts;
@@ -91,9 +92,32 @@ function createReadme(sandbox: SandboxDetails) {
   return `[![${title}](${urlBadge})](${urlBox})`;
 }
 
+/**
+ *
+ * [1,2,3] and [2,4] = [4]
+ * [1,2,3] and [2,3] = []
+ * [] and [1,2] = [1,2]
+ */
+function arrayDiff(actual: string[], expected: string[]) {
+  return expected.filter((e) => !actual.includes(e));
+}
+
 async function fixPackageJson(sandbox: SandboxDetails) {
   let modified = false;
   const reactVersion = semver.parse(getPackageVersion("react", sandbox));
+
+  const diffKeywords = arrayDiff(sandbox.packageJson.keywords, [
+    "sandbox",
+    "react",
+    ...(sandbox.category ? [sandbox.category] : []),
+  ]);
+  if (diffKeywords.length > 0) {
+    sandbox.packageJson.keywords = [
+      ...sandbox.packageJson.keywords,
+      ...diffKeywords,
+    ];
+    modified = true;
+  }
 
   if (sandbox.packageJson.scripts["types:check"] !== Config.CheckTypesCommand) {
     sandbox.packageJson.scripts["types:check"] = Config.CheckTypesCommand;

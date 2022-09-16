@@ -6,7 +6,8 @@
     "sandbox",
     "react",
     "example",
-    "useImperativeHandle"
+    "useImperativeHandle",
+    "hooks"
   ],
   "main": "src/index.js",
   "dependencies": {
