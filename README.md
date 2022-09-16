@@ -37,6 +37,12 @@ Repository used to store all sandboxes that I used during workshops.
 | 🔭 | useState: Example | [![Open in CodeSandbox](https://img.shields.io/badge/Open-in%20CodeSandbox-blue?style=for-the-badge&logo=codesandbox")](https://githubbox.com/gpichot/react-sandboxes/tree/main/sandboxes/hooks/usestate-example) |
 | 🔭 | useState: illustrate pitfall with imperative programming | [![Open in CodeSandbox](https://img.shields.io/badge/Open-in%20CodeSandbox-blue?style=for-the-badge&logo=codesandbox")](https://githubbox.com/gpichot/react-sandboxes/tree/main/sandboxes/hooks/usestate-illustrate-bug-with-imperative-side-effects) |
 
+### mobx-mst
+
+|   | Description | Link |
+|---|---|---|
+| 🔭 | MobX-state-tree example with NFT Pricing | [![Open in CodeSandbox](https://img.shields.io/badge/Open-in%20CodeSandbox-blue?style=for-the-badge&logo=codesandbox")](https://githubbox.com/gpichot/react-sandboxes/tree/main/sandboxes/mobx-mst/mobx-state-tree-example) |
+
 ### optimization
 
 |   | Description | Link |

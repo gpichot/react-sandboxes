@@ -430,6 +430,35 @@ importers:
       '@types/react-dom': 17.0.14
       typescript: 4.7.4
 
+  sandboxes/mobx-mst/mobx-state-tree-example:
+    specifiers:
+      '@babel/runtime': 7.13.8
+      '@types/react': 18.0.17
+      '@types/react-dom': 17.0.14
+      date-fns: 2.28.0
+      mobx: 6.5.0
+      mobx-react-lite: 3.3.0
+      mobx-state-tree: 5.1.3
+      react: 18.0.0
+      react-dom: 18.0.0
+      react-scripts: 5.0.0
+      typescript: ^4.7.4
+      uuidv4: 6.2.13
+    dependencies:
+      '@types/react-dom': 17.0.14
+      date-fns: 2.28.0
+      mobx: 6.5.0
+      mobx-react-lite: 3.3.0_5ruukgbqnajt75q4rdiz5dzqpe
+      mobx-state-tree: 5.1.3_mobx@6.5.0
+      react: 18.0.0
+      react-dom: 18.0.0_react@18.0.0
+      react-scripts: 5.0.0_boeld4aqqqvxudiccouiaergta
+      uuidv4: 6.2.13
+    devDependencies:
+      '@babel/runtime': 7.13.8
+      '@types/react': 18.0.17
+      typescript: 4.7.4
+
   sandboxes/optimization/code-splitting-exercise-company-map:
     specifiers:
       '@babel/runtime': 7.13.8
@@ -4019,6 +4048,10 @@ packages:
     resolution: {integrity: sha512-F5DIZ36YVLE+PN+Zwws4kJogq47hNgX3Nx6WyDJ3kcplxyke3XIzB8uK5n/Lpm1HBsbGzd6nmGehL8cPekP+Tg==}
     dev: false
 
+  /@types/uuid/8.3.4:
+    resolution: {integrity: sha512-c/I8ZRb51j+pYGAu5CrFMRxqZ2ke4y2grEBO5AUjgSkSk+qT2Ea+OdWElz/OiMf5MNpn2b17kuVBwZLQJXzihw==}
+    dev: false
+
   /@types/ws/8.5.3:
     resolution: {integrity: sha512-6YOoWjruKj1uLf3INHH7D3qTXwFfEsg1kf3c0uDdSBJwfa/llkwIjrAGV7j7mVgGNbzTQ3HiHKKDXl6bJPD97w==}
     dependencies:
@@ -5547,6 +5580,11 @@ packages:
       abab: 2.0.6
       whatwg-mimetype: 2.3.0
       whatwg-url: 8.7.0
+    dev: false
+
+  /date-fns/2.28.0:
+    resolution: {integrity: sha512-8d35hViGYx/QH0icHYCeLmsLmMUheMmTyV9Fcm6gvNwdw31yXXH+O85sOBJ+OLnLQMKZowvpKb6FgMIQjcpvQw==}
+    engines: {node: '>=0.11'}
     dev: false
 
   /debug/2.6.9:
@@ -8581,6 +8619,36 @@ packages:
     hasBin: true
     dependencies:
       minimist: 1.2.6
+    dev: false
+
+  /mobx-react-lite/3.3.0_5ruukgbqnajt75q4rdiz5dzqpe:
+    resolution: {integrity: sha512-U/kMSFtV/bNVgY01FuiGWpRkaQVHozBq5CEBZltFvPt4FcV111hEWkgwqVg9GPPZSEuEdV438PEz8mk8mKpYlA==}
+    peerDependencies:
+      mobx: ^6.1.0
+      react: ^16.8.0 || ^17
+      react-dom: '*'
+      react-native: '*'
+    peerDependenciesMeta:
+      react-dom:
+        optional: true
+      react-native:
+        optional: true
+    dependencies:
+      mobx: 6.5.0
+      react: 18.0.0
+      react-dom: 18.0.0_react@18.0.0
+    dev: false
+
+  /mobx-state-tree/5.1.3_mobx@6.5.0:
+    resolution: {integrity: sha512-noS6f0OG1T94Nlgq7Ex9k2JBGkoFclEdNLE5rlfOy5CUTzcHNJ18fu8t2TmGXDNzH/jdwc8xAR/w36A2XAUmwA==}
+    peerDependencies:
+      mobx: ^6.3.0
+    dependencies:
+      mobx: 6.5.0
+    dev: false
+
+  /mobx/6.5.0:
+    resolution: {integrity: sha512-pHZ/cySF00FVENDWIDzJyoObFahK6Eg4d0papqm6d7yMkxWTZ/S/csqJX1A3PsYy4t5k3z2QnlwuCfMW5lSEwA==}
     dev: false
 
   /ms/2.0.0:
@@ -11807,6 +11875,13 @@ packages:
   /uuid/8.3.2:
     resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
     hasBin: true
+    dev: false
+
+  /uuidv4/6.2.13:
+    resolution: {integrity: sha512-AXyzMjazYB3ovL3q051VLH06Ixj//Knx7QnUSi1T//Ie3io6CpsPu9nVMOx5MoLWh6xV0B9J0hIaxungxXUbPQ==}
+    dependencies:
+      '@types/uuid': 8.3.4
+      uuid: 8.3.2
     dev: false
 
   /v8-compile-cache-lib/3.0.1:
