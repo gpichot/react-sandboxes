@@ -579,6 +579,27 @@ importers:
       '@types/react-dom': 18.0.6
       typescript: 4.7.4
 
+  sandboxes/patterns/flexible-compound-components:
+    specifiers:
+      '@babel/runtime': 7.13.8
+      '@types/react': 18.0.17
+      '@types/react-dom': 17.0.14
+      classnames: 2.3.1
+      react: 18.0.0
+      react-dom: 18.0.0
+      react-scripts: 5.0.0
+      typescript: ^4.7.4
+    dependencies:
+      '@types/react-dom': 17.0.14
+      classnames: 2.3.1
+      react: 18.0.0
+      react-dom: 18.0.0_react@18.0.0
+      react-scripts: 5.0.0_boeld4aqqqvxudiccouiaergta
+    devDependencies:
+      '@babel/runtime': 7.13.8
+      '@types/react': 18.0.17
+      typescript: 4.7.4
+
   sandboxes/patterns/recomposable-component:
     specifiers:
       '@babel/runtime': 7.13.8
@@ -5018,6 +5039,10 @@ packages:
 
   /cjs-module-lexer/1.2.2:
     resolution: {integrity: sha512-cOU9usZw8/dXIXKtwa8pM0OTJQuJkxMN6w30csNRUerHfeQ5R6U3kkU/FtJeIf3M202OHfY2U8ccInBG7/xogA==}
+    dev: false
+
+  /classnames/2.3.1:
+    resolution: {integrity: sha512-OlQdbZ7gLfGarSqxesMesDa5uz7KFbID8Kpq/SxIoNGDqY8lSYs0D+hhtBXhcdB3rcbXArFr7vlHheLk1voeNA==}
     dev: false
 
   /clean-css/5.3.1:
