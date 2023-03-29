@@ -101,13 +101,13 @@ function CardColumn({ week, cards }: { week: number; cards: Card[] }) {
 }
 
 function useCostlyFunction() {
-  const wakeUpTime = new Date().getTime() + 5;
+  const wakeUpTime = new Date().getTime() + 1;
   while (new Date().getTime() < wakeUpTime);
 }
 
 function CardBox({ card }: { card: Card }) {
   const { currentCard, setCurrentCard } = useCurrentCardContext();
-  useCostlyFunction();
+  // useCostlyFunction();
 
   const handleKeyPress = (e: React.KeyboardEvent<HTMLDivElement>) => {
     if (e.key === "Enter" || e.key === " ") {
