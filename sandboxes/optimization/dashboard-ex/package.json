@@ -1,0 +1,42 @@
+{
+  "name": "ex-board-perf",
+  "version": "1.0.0",
+  "description": "Exercise board for performance optimization",
+  "keywords": [
+    "sandbox",
+    "react",
+    "React.memo",
+    "exercise",
+    "optimization"
+  ],
+  "main": "src/index.js",
+  "dependencies": {
+    "classnames": "2.3.1",
+    "react": "18.0.0",
+    "react-dom": "18.0.0",
+    "react-scripts": "5.0.0",
+    "sass": "^1.60.0",
+    "uuidv4": "6.2.13"
+  },
+  "devDependencies": {
+    "@babel/runtime": "7.13.8",
+    "@types/react": "18.0.17",
+    "@types/react-dom": "18.0.6",
+    "typescript": "^4.7.4"
+  },
+  "scripts": {
+    "start": "TSC_COMPILE_ON_ERROR=true DISABLE_ESLINT_PLUGIN=true react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "types:check": "tsc --noEmit --project tsconfig.json",
+    "lint": "eslint --fix",
+    "format": "prettier --write src"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
