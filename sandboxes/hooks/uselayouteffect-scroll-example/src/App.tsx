@@ -24,7 +24,7 @@ function SlowSibling() {
 
 function MessageList({ messages }: { messages: string[] }) {
   const ref = React.useRef<HTMLDivElement>(null);
-  React.useEffect(() => {
+  React.useLayoutEffect(() => {
     if (!ref.current) return;
     ref.current.scrollTop = ref.current.scrollHeight;
   }, [messages]);

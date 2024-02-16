@@ -12,6 +12,8 @@ const Config = {
   LintCommand: "eslint --fix",
   FormatCommand: "prettier --write src",
   Repository: "gpichot/react-sandboxes",
+  Dev: "vite",
+  Build: "vite build",
 };
 
 type PackageDependencies = { [key: string]: string };
@@ -24,7 +26,7 @@ type PackageJson = {
   dependencies: PackageDependencies;
   devDependencies: PackageDependencies;
   scripts: PackageScripts;
-  default: any;
+  default: unknown;
 };
 
 async function getSandboxDetail(sandboxPackageJsonFilePath: string) {
@@ -75,13 +77,13 @@ function getPackageVersion(
   return null;
 }
 
-function ensureVersion(currentVersion: string | null, expectedVersion: string) {
-  if (!currentVersion) return "-";
-  if (currentVersion !== expectedVersion) {
-    return chalk.red(currentVersion);
-  }
-  return chalk.green(currentVersion);
-}
+// function ensureVersion(currentVersion: string | null, expectedVersion: string) {
+//   if (!currentVersion) return "-";
+//   if (currentVersion !== expectedVersion) {
+//     return chalk.red(currentVersion);
+//   }
+//   return chalk.green(currentVersion);
+// }
 
 function createReadme(sandbox: SandboxDetails) {
   const title = "Open in CodeSandbox";
@@ -134,8 +136,33 @@ async function fixPackageJson(sandbox: SandboxDetails) {
     modified = true;
   }
 
-  if (sandbox.packageJson.devDependencies["typescript"] !== "^4.7.4") {
-    sandbox.packageJson.devDependencies["typescript"] = "^4.7.4";
+  if (sandbox.packageJson.scripts["dev"] !== Config.Dev) {
+    sandbox.packageJson.scripts["dev"] = Config.Dev;
+    modified = true;
+  }
+
+  if (sandbox.packageJson.scripts["build"] !== Config.Build) {
+    sandbox.packageJson.scripts["build"] = Config.Build;
+    modified = true;
+  }
+
+  if (sandbox.packageJson.scripts['start']) {
+    delete sandbox.packageJson.scripts['start'];
+    modified = true;
+  }
+
+  if (sandbox.packageJson.devDependencies["typescript"] !== "^5.3.3") {
+    sandbox.packageJson.devDependencies["typescript"] = "^5.3.3";
+    modified = true;
+  }
+
+  if (sandbox.packageJson.devDependencies["@types/node"] !== "^18.0.9") {
+    sandbox.packageJson.devDependencies["@types/node"] = "^18.0.9";
+    modified = true;
+  }
+
+  if (sandbox.packageJson.dependencies["react-scripts"]) {
+    delete sandbox.packageJson.dependencies["react-scripts"];
     modified = true;
   }
 
@@ -143,7 +170,7 @@ async function fixPackageJson(sandbox: SandboxDetails) {
     if (reactVersion) {
       const version = {
         17: "17.0.39",
-        18: "18.0.17",
+        18: "18.2.0",
       }[reactVersion.major];
       if (version) {
         sandbox.packageJson.devDependencies["@types/react"] = version;
@@ -156,13 +183,18 @@ async function fixPackageJson(sandbox: SandboxDetails) {
     if (reactVersion) {
       const version = {
         17: "17.0.11",
-        18: "18.0.6",
+        18: "18.2.0",
       }[reactVersion.major];
       if (version) {
         sandbox.packageJson.devDependencies["@types/react-dom"] = version;
         modified = true;
       }
     }
+  }
+
+  if (sandbox.packageJson.devDependencies["vite"] !== "^5.1.1") {
+    sandbox.packageJson.devDependencies["vite"] = "^5.1.1";
+    modified = true;
   }
 
   const readmeFilePath = `sandboxes/${sandbox.category}/${sandbox.slug}/README.md`;
@@ -224,7 +256,7 @@ Promise.all(sandboxes.map(getSandboxDetail))
           chalk.dim(sandbox.description || " ").padEnd(80, " "),
           getPackageVersion("react", sandbox),
           getPackageVersion("react-dom", sandbox),
-          ensureVersion(getPackageVersion("react-scripts", sandbox), "5.0.0"),
+          getPackageVersion("vite", sandbox),
           getPackageVersion("typescript", sandbox),
           sandbox.packageJson.keywords.join(","),
         ];

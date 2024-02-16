@@ -74,30 +74,38 @@ export default function Board() {
   const [columns, setColumns] = React.useState<ICardColumn[]>(() =>
     createCardColumns({ columns: 40 })
   );
+  const [currentCard, setCurrentCard] = React.useState<Card | null>(null);
   return (
     <div>
-      <CurrentCardProvider>
-        <div>
-          <h1>Board</h1>
-          <div className={styles.board}>
-            {columns.map(({ week, cards }) => (
-              <CardColumn key={week} cards={cards} week={week} />
-            ))}
-          </div>
+      <div>
+        <h1>Board</h1>
+        <div className={styles.board}>
+          {columns.map(({ week, cards }) => (
+            <CardColumn key={week} week={week}>
+              {cards.map((card) => (
+                <MemoizedCardBox
+                  key={card.title}
+                  card={card}
+                  selected={card.id === currentCard?.id}
+                  onClick={setCurrentCard}
+                />
+              ))}
+            </CardColumn>
+          ))}
         </div>
-      </CurrentCardProvider>
+      </div>
     </div>
   );
 }
 
-function CardColumn({ week, cards }: { week: number; cards: Card[] }) {
-  return (
-    <div className={styles.column}>
-      {cards.map((card) => (
-        <CardBox key={card.title} card={card} />
-      ))}
-    </div>
-  );
+function CardColumn({
+  week,
+  children,
+}: {
+  week: number;
+  children: React.ReactNode;
+}) {
+  return <div className={styles.column}>{children}</div>;
 }
 
 function useCostlyFunction() {
@@ -105,28 +113,37 @@ function useCostlyFunction() {
   while (new Date().getTime() < wakeUpTime);
 }
 
-function CardBox({ card }: { card: Card }) {
-  const { currentCard, setCurrentCard } = useCurrentCardContext();
+function CardBox({
+  card,
+  selected,
+  onClick,
+}: {
+  card: Card;
+  selected: boolean;
+  onClick: (card: Card) => void;
+}) {
   // useCostlyFunction();
 
   const handleKeyPress = (e: React.KeyboardEvent<HTMLDivElement>) => {
     if (e.key === "Enter" || e.key === " ") {
-      setCurrentCard(card);
+      onClick(card);
     }
   };
   return (
     <div
       onClick={() => {
-        setCurrentCard(card);
+        onClick(card);
       }}
       role="button"
       onKeyDown={handleKeyPress}
       tabIndex={0}
       className={classnames(styles.card, {
-        [styles.cardSelected]: currentCard?.id === card.id,
+        [styles.cardSelected]: selected,
       })}
     >
       {card.title}
     </div>
   );
 }
+
+const MemoizedCardBox = React.memo(CardBox);

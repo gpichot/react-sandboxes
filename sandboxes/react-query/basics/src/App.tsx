@@ -5,13 +5,13 @@ import {
   useQueryClient,
   QueryClient,
   QueryClientProvider
-} from "react-query";
+} from "@tanstack/react-query";
 
 import { getTodos, postTodo } from "./api";
 
 function Todos() {
   // Queries
-  const query = useQuery(["todos"], getTodos);
+  const query = useQuery({ queryKey: ["todos"], queryFn: getTodos });
 
   const { data: todos } = query;
 

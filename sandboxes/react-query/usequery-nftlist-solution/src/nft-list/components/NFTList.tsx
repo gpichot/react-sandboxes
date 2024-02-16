@@ -1,6 +1,6 @@
 import React from "react";
 import NFTCard from "./NFTCard";
-import { useQuery, useQueryClient } from "react-query";
+import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { Card, Loader, Message } from "semantic-ui-react";
 
 import { getPokemonsList } from "../api";
@@ -8,19 +8,20 @@ import { getPokemonsList } from "../api";
 export default function NFTList(): JSX.Element | string {
   const [page, setPage] = React.useState(0);
   const queryClient = useQueryClient();
-  const pokemonListQuery = useQuery(
-    ["pokemons", page],
-    () => getPokemonsList(page),
-    {
-      keepPreviousData: true,
-      staleTime: 10000
-    }
+  const pokemonListQuery = useQuery({
+    queryKey: ["pokemons", page],
+    queryFn: () => getPokemonsList(page),
+
+    keepPreviousData: true,
+    staleTime: 10000
+  }
   );
 
   React.useEffect(() => {
-    queryClient.prefetchQuery(["pokemons", page + 1], () =>
-      getPokemonsList(page + 1)
-    );
+    queryClient.prefetchQuery({
+      queryKey: ["pokemons", page + 1], queryFn: () =>
+        getPokemonsList(page + 1)
+    });
   }, [queryClient, page]);
 
   if (pokemonListQuery.isLoading) {

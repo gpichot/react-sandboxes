@@ -9,8 +9,16 @@ if (!rootElement) {
 }
 const root = createRoot(rootElement);
 
+function Main({ }) {
+  return <main>{children}</main>;
+}
+
 root.render(
   <StrictMode>
-    <App />
+    <div>
+      <main>
+        <App />
+      </main>
+    </div>
   </StrictMode>
 );

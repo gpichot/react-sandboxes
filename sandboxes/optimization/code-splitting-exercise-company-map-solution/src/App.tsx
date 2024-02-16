@@ -8,7 +8,7 @@ function sleep(ms = 2000) {
 }
 const Map = React.lazy(async () => {
   await sleep(2000);
-  return (await import("./Map")).Map;
+  return import("./Map");
 });
 
 function DetailPage() {

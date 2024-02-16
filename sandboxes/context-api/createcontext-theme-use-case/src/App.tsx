@@ -8,7 +8,7 @@ import "./styles.css";
 const ThemeContext = React.createContext<{
   color: string;
 }>({
-  color: "#fff",
+  color: "pink",
 });
 
 function ComponentWithStyle() {
@@ -27,7 +27,7 @@ function Container() {
 
 export default function App() {
   return (
-    <ThemeContext.Provider value={{ color: "white" }}>
+    <ThemeContext.Provider value={{ color: "pink" }}>
       <Container />
     </ThemeContext.Provider>
   );

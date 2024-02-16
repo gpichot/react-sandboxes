@@ -1,6 +1,6 @@
 import React from "react";
 import { faker } from "@faker-js/faker";
-import { useInfiniteQuery } from "react-query";
+import { useInfiniteQuery } from "@tanstack/react-query";
 
 import styles from "./styles.module.css";
 
@@ -53,7 +53,9 @@ function PostSkeleton() {
 }
 
 export default function App() {
-  const query = useInfiniteQuery("posts", fetchPosts, {
+  const query = useInfiniteQuery({
+    queryKey: ["posts"],
+    queryFn: fetchPosts,
     getNextPageParam: (lastPage) => lastPage.nextPage,
     getPreviousPageParam: (firstPage) => firstPage.previousPage,
   });

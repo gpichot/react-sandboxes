@@ -1,7 +1,6 @@
 import React from "react";
 
 import { useForm } from "react-hook-form";
-import { DevTool } from "@hookform/devtools";
 
 type UserFormDetails = {
   firstName: string;
@@ -43,7 +42,6 @@ export default function App() {
         <br />
         <input type="submit" />
       </form>
-      <DevTool control={control} />
     </>
   );
 }

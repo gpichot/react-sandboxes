@@ -1,9 +1,9 @@
 import React from "react";
 import { types, onSnapshot } from "mobx-state-tree";
 import "./styles.css";
-import { useLocalObservable, useObserver } from "mobx-react-lite";
+import { useObserver, useLocalObservable } from "mobx-react-lite";
 import { formatDistanceToNow } from "date-fns";
-import { uuid } from "uuidv4";
+import { v4 as uuid } from "uuid";
 
 const PricePoint = types
   .model("PricePoint", {
@@ -37,13 +37,6 @@ const NFT = types
     }
   }));
 
-function createNFT() {
-  return NFT.create({
-    id: "nft-1",
-    name: "MyNFT",
-    price: 10
-  });
-}
 
 export default function App() {
   // const nft = useLocalObservable(createNFT);
@@ -51,15 +44,16 @@ export default function App() {
     id: "nft-1",
     name: "MyNFT",
     price: 10,
-    priceHistory: []
+    priceHistory: [] as { date: Date; price: number }[]
   });
 
-  const addRandomSellPointTo = (nft) => {
+  const addRandomSellPointTo = (n: typeof nft) => {
     setNfT({
-      ...nft,
+      ...n,
       priceHistory: [
-        ...nft.priceHistory,
+        ...n.priceHistory,
         {
+          id: uuid(),
           date: new Date(),
           price: Math.random() * 10
         }
@@ -84,6 +78,7 @@ export default function App() {
         </li>
       ))}
       <button
+        type="button"
         onClick={() => {
           addRandomSellPointTo(nft);
         }}

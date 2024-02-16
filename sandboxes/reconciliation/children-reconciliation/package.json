@@ -11,23 +11,24 @@
   "main": "src/index.js",
   "dependencies": {
     "react": "18.0.0",
-    "react-dom": "18.0.0",
-    "react-scripts": "5.0.0"
+    "react-dom": "18.0.0"
   },
   "devDependencies": {
     "@babel/runtime": "7.13.8",
-    "typescript": "^4.7.4",
+    "typescript": "^5.3.3",
     "@types/react": "18.0.17",
-    "@types/react-dom": "18.0.6"
+    "@types/react-dom": "18.0.6",
+    "vite": "^5.1.1",
+    "@types/node": "^18.0.9"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "vite build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "types:check": "tsc --noEmit --project tsconfig.json",
     "lint": "eslint --fix",
-    "format": "prettier --write src"
+    "format": "prettier --write src",
+    "dev": "vite"
   },
   "browserslist": [
     ">0.2%",
@@ -36,4 +37,3 @@
     "not op_mini all"
   ]
 }
-

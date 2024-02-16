@@ -20,7 +20,7 @@ function DetailPage() {
       <h1>Company</h1>
       <address>Nantes</address>
       <br />
-      <button onClick={() => setShowMap(!showMap)}>
+      <button onClick={() => setShowMap(!showMap)} type="button">
         {showMap ? "Hide" : "Show"} Map
       </button>
       {showMap && (
